@@ -14,4 +14,7 @@ use App\Http\Controllers\PaypalController;
 |
 */
 
+
 Route::inertia('/', 'Hola');
+Route::post('/crear-pedido', [PaypalController::class, 'crearPedido']);
+Route::get('/redireccionar-a-paypal', [PaypalController::class, 'redireccionarAPayPal']);
